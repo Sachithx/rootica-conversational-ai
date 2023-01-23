@@ -1,0 +1,74 @@
+stories:
+- story: Product inquiry type 1 test 
+  steps:
+  - user: |
+      Hi aubowan!
+    intent: greet
+  - action: utter_greet
+  - user: | 
+      Do you have [sandalwood spa set](product)? 
+    intent: check_availability
+  - action: action_availability
+  - user: |
+      what are the suitable skin types?
+    intent: skin_type
+  - action: action_skin_type
+  - user: |
+      what is inside?
+    intent: ingredients
+  - action: action_ingredients
+  - user: |
+      How much is that?
+    intent: check_price
+  - action: action_price
+  - user: |
+      do you have cod?
+    intent: cod
+  - action: utter_cod
+  - user: |
+      How long it takes to deliver Negambo
+    intent: delivery_time
+  - action: utter_delivery_time
+  - user: |
+      How much is the delivery fee
+    intent: delivery_fee
+  - action: utter_delivery_fee
+  - user: |
+      how to buy?
+    intent: purchase
+  - action: action_purchase
+
+- story: Product inquiry type 2 test 
+  steps:
+  - user: |
+      hello!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      how much is the [tuberose perfume roll on](product)
+    intent: check_price
+  - action: action_price
+  - user: |
+      delivery charges?
+    intent: delivery_fee
+  - action: utter_delivery_fee
+  - user: |
+      how much time will it take to deliver?
+    intent: delivery_time
+  - action: utter_delivery_time
+  - user: |
+      what are the ingredients?
+    intent: ingredients
+  - action: action_ingredients
+  - user: |
+      is it good for any skin type?
+    intent: skin_type
+  - action: action_skin_type
+  - user: |
+      how can I pay?
+    intent: pay_method
+  - action: utter_pay_method
+  - user: |
+      Tell me how to purchase that one
+    intent: purchase_product
+  - action: action_purchase

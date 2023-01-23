@@ -1,0 +1,26 @@
+version: "3.1"
+stories:
+- story: Product inquiry type 1 test (./tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_availability
+    entities:
+    - product: sandalwood spa set
+  - slot_was_set:
+    - product: sandalwood spa set
+  - action: action_availability
+  - intent: skin_type
+  - action: action_skin_type
+  - intent: ingredients
+  - action: action_ingredients
+  - intent: check_price
+  - action: action_price
+  - intent: cod
+  - action: utter_cod
+  - intent: delivery_time
+  - action: utter_delivery_time
+  - intent: delivery_fee
+  - action: utter_delivery_fee
+  - intent: purchase  # predicted: purchase_product: how to buy?
+  - action: action_purchase  # predicted: action_default_fallback

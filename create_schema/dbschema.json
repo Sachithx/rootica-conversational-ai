@@ -1,0 +1,11 @@
+{
+    "product_id" : 10245879, 
+    "product_name" : "Neem and tea tree cream",
+    "price" : 1200.00,
+    "benifits" : "This string will denote benifits that can be achived using the product",
+    "available" : true,
+    "instructions" : "This string will denote instructions to use the product",
+    "ingredients" : "This string will denote ingredients used in the product",
+    "image" : "http://www.example.com/image.jpg",
+    "checkout_url" : "http://www.example.com/checkout"
+}

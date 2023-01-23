@@ -1,0 +1,50 @@
+[
+  {
+    "text": "please send me how to purchase it",
+    "intent": "purchase_product",
+    "intent_prediction": {
+      "name": "check_price",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "can i pay by cash?",
+    "intent": "pay_method",
+    "intent_prediction": {
+      "name": "cod",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Tnx a lot.",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "about_bot",
+      "confidence": 0.9996418952941895
+    }
+  },
+  {
+    "text": "Fruit Paradise - 24 Days Wellness & Beauty Calendar",
+    "intent": "check_availability",
+    "intent_prediction": {
+      "name": "check_price",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Aroma Gallery- Buy Any 2 for Rs.2500",
+    "intent": "check_availability",
+    "intent_prediction": {
+      "name": "delivery_fee",
+      "confidence": 0.9999998807907104
+    }
+  },
+  {
+    "text": "Assorted",
+    "intent": "check_availability",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5431338548660278
+    }
+  }
+]

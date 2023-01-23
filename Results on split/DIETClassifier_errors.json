@@ -1,0 +1,158 @@
+[
+  {
+    "text": "can you tell me for which skin type Sleep Intense - Wellness Trio works well",
+    "entities": [
+      {
+        "start": 36,
+        "end": 65,
+        "value": "Sleep Intense - Wellness Trio",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 36,
+        "end": 49,
+        "confidence_entity": 0.9999799728393555,
+        "value": "Sleep Intense",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "product",
+        "start": 52,
+        "end": 65,
+        "confidence_entity": 0.9999597072601318,
+        "value": "Wellness Trio",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "product",
+        "start": 72,
+        "end": 76,
+        "confidence_entity": 0.9620331525802612,
+        "value": "well",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i bought Royal Lotus - Eau De Perfume roll from you. but can you tell me what skin type it is most suitable for",
+    "entities": [
+      {
+        "start": 9,
+        "end": 42,
+        "value": "Royal Lotus - Eau De Perfume roll",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 2,
+        "end": 8,
+        "confidence_entity": 0.9991865754127502,
+        "value": "bought",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "product",
+        "start": 9,
+        "end": 20,
+        "confidence_entity": 0.9997915625572205,
+        "value": "Royal Lotus",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "product",
+        "start": 23,
+        "end": 42,
+        "confidence_entity": 0.9986383318901062,
+        "value": "Eau De Perfume roll",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "May i know the price pls wake up and glow",
+    "entities": [
+      {
+        "start": 25,
+        "end": 41,
+        "value": "wake up and glow",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 25,
+        "end": 32,
+        "confidence_entity": 0.9986842274665833,
+        "value": "wake up",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "product",
+        "start": 37,
+        "end": 41,
+        "confidence_entity": 0.627236008644104,
+        "value": "glow",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Fruit Paradise - 24 Days Wellness & Beauty Calendar",
+    "entities": [
+      {
+        "start": 0,
+        "end": 51,
+        "value": "Fruit Paradise - 24 Days Wellness & Beauty Calendar",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.8519607782363892,
+        "value": "Fruit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "product",
+        "start": 20,
+        "end": 51,
+        "confidence_entity": 0.47439923882484436,
+        "value": "Days Wellness & Beauty Calendar",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Aroma Gallery- Buy Any 2 for Rs.2500",
+    "entities": [
+      {
+        "start": 0,
+        "end": 36,
+        "value": "Aroma Gallery- Buy Any 2 for Rs.2500",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Assorted",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Assorted",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

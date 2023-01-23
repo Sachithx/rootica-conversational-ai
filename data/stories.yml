@@ -1,0 +1,71 @@
+version: "3.1"
+
+stories:
+
+- story: Product inquiry type 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_availability
+  - action: action_availability
+  - intent: skin_type
+  - action: action_skin_type
+  - intent: ingredients
+  - action: action_ingredients
+  - intent: check_price
+  - action: action_price
+  - intent: cod
+  - action: utter_cod
+  - intent: delivery_time
+  - action: utter_delivery_time
+  - intent: delivery_fee
+  - action: utter_delivery_fee
+  - intent: purchase_product
+  - action: action_purchase
+
+- story: Product inquiry type 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_price
+  - action: action_price
+  - intent: delivery_fee
+  - action: utter_delivery_fee
+  - intent: delivery_time
+  - action: utter_delivery_time
+  - intent: ingredients
+  - action: action_ingredients
+  - intent: skin_type
+  - action: action_skin_type
+  - intent: pay_method
+  - action: utter_pay_method
+  - intent: purchase_product
+  - action: action_purchase
+
+- story: cancel a previous order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cancel
+  - action: utter_cancel
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Asking about payment methods and then delivery
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pay_method
+  - action: utter_pay_method
+  - intent: cod
+  - action: utter_cod
+  - intent: delivery_fee
+  - action: utter_delivery_fee
+  - intent: delivery_time
+  - action: utter_delivery_time
+  - intent: thanks
+  - action: utter_welcome
+  - intent: goodbye
+  - action: utter_goodbye

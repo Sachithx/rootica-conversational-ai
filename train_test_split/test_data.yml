@@ -1,0 +1,136 @@
+version: "3.1"
+nlu:
+- intent: goodbye
+  examples: |
+    - bye
+    - bye bye
+- intent: age
+  examples: |
+    - I'd like to know your age
+    - how old r you
+    - r u my grandma's age?
+    - tell me your age
+    - what is your age as of today?
+- intent: about_bot
+  examples: |
+    - describe you
+    - am I talking to a bot?
+    - are you a bot?
+    - what all you do?
+- intent: benifits
+  examples: |
+    - what are the benifits of using [peace islander](product)
+    - how about the benifits
+    - what are the benifits of using [caramom rose islander set](product)
+    - what kind of benifits my  hair  can have by using  [energise home spa set](product)
+- intent: ingredients
+  examples: |
+    - I want to know the ingredients of [Night Jasmine Roll-On](product)
+    - what are inside?
+    - what are the ingredients of that?
+    - what are the included herbs of that?
+    - tell me the ingredients you use to make [Ultimate Glow Routine](product)
+- intent: cod
+  examples: |
+    - COD available or not
+    - Is cash on delivery
+    - Can i get cash on delivery
+    - can i pay the rest later on delivery
+- intent: cancel
+  examples: |
+    - any process to cancel an order
+    - how to cancel the order
+    - how can i cancel my orders
+    - what if i cancel my order
+    - what is the cancelation fee
+- intent: delivery_time
+  examples: |
+    - How long it ll take to deliver
+    - how long will it take for the delivery?
+    - When will you deliver these.
+    - How long does it take to deliver an order to Kalutara
+    - delivery tim period
+- intent: purchase_product
+  examples: |
+    - can I buy that product now?
+    - please send me how to purchase it
+    - i need [Island Rose Eau De Perfume Roll-On](product)
+    - can I buy that?
+    - needd to buy [Ashwagandha Treatment Oil](product)
+- intent: pay_method
+  examples: |
+    - can i pay via koko app
+    - How to do the payment
+    - I have saw that  intpay option. So how i pay by this. What are the procedures
+    - can i pay by cash?
+    - how to pay
+    - need to knoe about your card payments method
+- intent: greet
+  examples: |
+    - Hellooooo
+    - hii
+    - hi
+    - Good Evenings
+    - hey
+    - Hi Ayubowan
+- intent: skin_type
+  examples: |
+    - can you tell me for which skin type [Sleep Intense - Wellness Trio](product) works well
+    - skin type for this?
+    - what skin type in [Tuberose - Eau De Perfume Roll-On](product)
+    - Can you tell me the Dosha of [Peace - Wellness Trio](product)?
+    - i bought [Royal Lotus - Eau De Perfume roll](product) from you. but can you tell me what skin type it is most suitable for
+- intent: delivery_fee
+  examples: |
+    - I need to know how much delivery cost
+    - what is the delivery fee
+    - delivery cost
+    - tell me about your delivery charges
+    - are u adding delivery amout
+    - how you charge for delivery cost
+    - is the delivery free
+- intent: check_price
+  examples: |
+    - how about the price of that
+    - Can I know the price of iro
+    - price of it?
+    - prices of these
+    - I need the price of [Ceylon Tea Home Spa Set](product)
+    - May i know the price pls [wake up and glow](product)
+    - what is the price
+    - Price plz [sandalwood home spa set](product)
+- intent: thanks
+  examples: |
+    - perfect! thank you
+    - Awesome thanks guys
+    - Many Thanks !
+    - Sure Thanks
+    - thanks..
+    - Sure.Thanks
+    - Tnx a lot.
+    - Thank you for the update
+    - thanks
+    - Thank you for the information
+    - terrifc thank you
+- intent: check_availability
+  examples: |
+    - [Detox - Home Spa Set](product)
+    - Is [Cardamom Rose Home Spa Set](product) available in store ?
+    - [Sensual Sandalwood - Body & Pillow Mist - 100ml](product)
+    - Can you tell me is this available?
+    - [De-Stress  - Home Spa Set](product)
+    - is it available ?
+    - [Sleep - Home Spa Set](product)
+    - [Island Rose - Eau De Perfume Roll-On - 10ml](product)
+    - Is this available to purchase??
+    - [Fruit Paradise - 24 Days Wellness & Beauty Calendar](product)
+    - [Aroma Gallery- Buy Any 2 for Rs.2500](product)
+    - availablity of that?
+    - do you have [Ashwagandha - Treatment Oil 250Ml](product)
+    - Isn't this available at the moment ?
+    - [Assorted](product)
+- synonym: skin types
+  examples: |
+    - dosha types
+    - hair types
+    - skin types

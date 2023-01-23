@@ -1,0 +1,100 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - age
+  - about_bot
+  - delivery_fee
+  - delivery_time
+  - cancel
+  - cod
+  - pay_method
+  - nlu_fallback
+  - check_availability
+  - skin_type
+  - purchase_product
+  - check_price
+  - ingredients
+  - benifits
+
+entities:
+  - product
+
+slots:
+  product:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: product
+
+
+responses:
+  utter_greet:
+  - text: "Hi!, Im Ceylonica I'm your digital assistant 🤖 \nHow can I help you 😎"
+  - text: "Hi!, What's up? Im Ceylonica I'm your digital assistant 🤖 \nHow can I help you 😎"
+  - text: "Hi!, Here I'm Ceylonica 🤖 \nHow can I help you 😎"
+  - text: "Hi!, Hello there 🤖 \nHow can I help you 😎"
+  - text: "Hi!, What a nice day!! Im Ceylonica I'm your digital assistant 🤖 \nHow can I help you 😎"
+
+  utter_goodbye:
+  - text: "Hope you have a great day! 👋"
+  - text: "Happy shopping!! 🛒"
+  - text: "Have a great day and Happy shopping!! 🛒"
+  - text: "See you then. Have a great day!! 👋"
+
+  utter_my_age:
+  - text: "I prefer not to answer with a number. I know I'm young 😌"
+  - text: "I know I'm young 😌"
+  - text: "Yeah I'm not gonna answer that. I know I'm young 😌"
+  - text: "Thank you for the concern. I know I'm young 😌. So I'm not answering."
+
+  utter_welcome:
+  - text: "You are welcome 😊"
+  - text: "My pleasure 😊"
+  - text: "Anytime 😊"
+  - text: "No worries 😊"
+  - text: "No prob 😊"
+
+  utter_iamabot:
+  - text: "I am an e-commerce Chat Bot, an artificial intelligent assistant designed to help you 😎"
+  - text: "I am an AI assistant and I would love to assist you to Explore our products 😃"
+  - text: "I am an AI assistant helping you to explore our products 😃"
+  - text: "I am an AI assistant at Rootorganics, I'm helping you to explore our store 😃"
+
+  utter_fallback:
+  - text: "I'm sorry, I cannot help you with that 😭 \nHuman Assistant will contact you in few minutes!"
+  - text: "I think you have to wait until our human assistent contact you, \nI cannot help you with that 😭"
+  - text: "Our Human Assistant will contact you in few minutes!"
+  - text: "Can you wait few minutes. our human assistant will conatct you!"
+
+  utter_delivery_fee:
+  - text: "Delivery fee is 250 LKR for the 1st kg and 65 LKR will be added for each additional KG 🚚 💰"
+
+  utter_cod:
+  - text: "Yes we  have island-wide Cash On Delivery for orders below 10,000 LKR 🚚 💵"
+
+  utter_pay_method:
+  - text: "You can pay online via debit/credit card or cash on delivery (if the order value is below 10,000LKR) 🏦\nWe also have an easy payment method of 3 months installment free payment for all online purchases through MintPay and Commercial Bank 3 months installment pay 💵"
+
+  utter_delivery_time:
+  - text: "Once placed for deliveries within Colombo 1-15 & suburbs take 2-4 working days ⏳\nAll other areas take 4-7 working days, excluding the weekend.\nCash on delivery is also available island-wide;\nhowever, the delivery may take an additional 1-2 working days longer 🫠"
+
+  utter_cancel:
+  - text: "Kindly share the order number you wish to cancel or the email address you placed the order from & we will do the needful 😩"
+  - text: "Yeah sure, please send us the order number or email address, I will do that for you."
+  - text: "Why not? I will do that for you, kindly share the product number or your email address. I will do."
+
+actions:
+  - action_availability
+  - action_skin_type
+  - action_ingredients
+  - action_price
+  - action_purchase
+  - action_benifits
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

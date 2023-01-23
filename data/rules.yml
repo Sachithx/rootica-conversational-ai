@@ -1,0 +1,89 @@
+version: "3.1"
+
+rules:
+### Small talks
+- rule: Greet anytime the user says Hi
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user is ready to go
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Fallback whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback
+
+- rule: Reply anytime when the user asks the age
+  steps:
+  - intent: age
+  - action: utter_my_age
+
+- rule: Welcome anytime when the user says thank you
+  steps:
+  - intent: thanks
+  - action: utter_welcome
+
+- rule: Say 'I am a bot' anytime the user asks who you are
+  steps:
+  - intent: about_bot
+  - action: utter_iamabot
+
+### FAQs
+- rule: Reply the delivery fee
+  steps:
+  - intent: delivery_fee
+  - action: utter_delivery_fee
+
+- rule: Reply cash on delivery
+  steps:
+  - intent: cod
+  - action: utter_cod
+
+- rule: Reply on payment method
+  steps:
+  - intent: pay_method
+  - action: utter_pay_method
+
+- rule: Reply how long it takes to deliver
+  steps:
+  - intent: delivery_time
+  - action: utter_delivery_time
+
+- rule: Cancel order
+  steps:
+  - intent: cancel
+  - action: utter_cancel
+
+- rule: Tell the Availability
+  steps:
+  - intent: check_availability
+  - action: action_availability
+
+- rule: Tell the skin types
+  steps:
+  - intent: skin_type
+  - action: action_skin_type
+
+- rule: Tell the price
+  steps:
+  - intent: check_price
+  - action: action_price
+
+- rule: Tell the ingredients
+  steps:
+  - intent: ingredients
+  - action: action_ingredients
+
+- rule: Send Purchase Link
+  steps:
+  - intent: purchase_product
+  - action: action_purchase
+
+- rule: Show benifits
+  steps:
+  - intent: benifits
+  - action: action_benifits

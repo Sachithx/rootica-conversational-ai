@@ -1,0 +1,590 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hey there
+    - Guys.. Hi
+    - Hi, good morning
+    - good morning
+    - hey dude
+    - Good Evenings
+    - Hey, I'm Tharindu
+    - Hellooooo
+    - Hi Ayubowan
+    - aubowan
+    - ayubowan!!
+    - hello
+    - goodevening
+    - Hihi
+    - Hello good morning
+    - good afternoon
+    - hiiiii
+    - Helloo
+    - good evening
+    - goodmorning
+    - hi
+    - hello there
+    - Hi dr
+    - Hi good evening
+    - hii
+    - hiii
+    - hey there
+    - hey
+    - Hi Im Pamoda
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: age
+  examples: |
+    - ur age
+    - how old are you?
+    - your age
+    - age of yours
+    - I'd like to know your age
+    - How old will you be turning?
+    - tell me how old you are
+    - are you younger than my elder sister?
+    - You look aged
+    - i wanna know your age
+    - how can i know about your age
+    - how old r you
+    - what's your age?
+    - u sound like an oldie. how old r u?
+    - how old r u?
+    - what is your age as of today?
+    - r u my grandma's age?
+    - tell me your age
+    - what is your age?
+    - How old did you turn?
+    - How old are you now?
+
+- intent: thanks
+  examples: |
+    - well thank you
+    - Noted Thanks
+    - I see thanks a lot
+    - Thanks. I received it
+    - Sure.Thanks
+    - Oook.thank you so much
+    - thanks a lot
+    - Thanks u so much
+    - Thx
+    - thank u for this
+    - perfect thank you
+    - tysm
+    - That's alright. thanks for looking
+    - Ok sure..thnx
+    - sup
+    - much appreciated
+    - perfect! thank you
+    - thank you
+    - Received Thanks
+    - really appreciate your help on this
+    - Ohh.. ok thanks
+    - Ok. Thanks
+    - ty
+    - terrifc thank you
+    - Thank u so much
+    - Thanks for the reply
+    - thanks
+    - Thanks a lot.
+    - I got it. Thank you
+    - Many Thanks !
+    - got it... thank u
+    - Ok thnks
+    - Ok..thank u so much
+    - Its ok thanks
+    - Thanks a lot!
+    - Ah ok. Thanks
+    - Thank you for the details
+    - Thank you for your service
+    - thanks..
+    - Ok Thanks, will check the same
+    - Thanks for your response. Will do. Thanks !
+    - Thanks so much !!
+    - SureThanks for letting me know
+    - Thank you for the information
+    - Thanx
+    - Thank you for the update
+    - Thank you so much for the above information
+    - Great Thanks
+    - Awesome thanks guys
+    - Noted thanks
+    - Thank you so much for your response
+    - Appreciate the response
+    - Ok thank you for ur friendly service.
+    - Sure Thanks
+    - Thank you for your response. Will check it out
+    - Hi that's great! Thanks
+    - i appreciate it
+    - Ok thanks
+    - Thank you so much dear
+
+- intent: about_bot
+  examples: |
+    - about yourself
+    - what you do?
+    - Who?
+    - name
+    - describe you
+    - tell me about you
+    - what all you do?
+    - why are you here
+    - what can do?
+    - what all can you do?
+    - Where am I?
+    - what can you do?
+    - who are you
+    - what can you do for me?
+    - what do you do?
+    - all about you
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - what is your name 
+
+- intent: delivery_fee
+  examples: |
+    - Delivery free 
+    - hey, can I also know how much you charge for delivery
+    - How much does it cost to deliver
+    - how much delivery cost
+    - need your delivery charge
+    - how about delivery charge
+    - Can I know the delivery fees
+    - shipping cost
+    - tell me about your delivery charges
+    - Do you have any idea how much will be the shipping cost?
+    - how you charge for delivery
+    - Price and the delivery fee within Colombo plz
+    - May I know the delivery charges to Nawalapitiya ?
+    - How much is delivery to Colombo 7
+    - I know the price plus delivery charges to kalutara
+    - Do you take a delivery charge to deliver products
+    - how you charge for delivery cost
+    - can i know about the delivery charges
+    - any charge for delivery
+    - delivery charge
+    - Delivery charges to galle?
+    - shipping charge
+    - delivery cost
+    - I need to know how much delivery cost
+    - are u adding delivery amout
+    - how much dose it cost to deliver a package from colombo to matara
+    - can I know how abt delivery cost
+    - What is the delivery charge for kurunegala ?
+    - is the delivery free
+    - delivery amount
+    - what is the delivery fee
+
+- intent: cod
+  examples: |
+    - Do you have island wide cash on delivery ??
+    - cod?
+    - Hi, Will you do cash on delivery
+    - COD available or not
+    - Do you have cash on delivery system
+    - aren't you having cash on deliveries now? 
+    - Cash on delivery available??
+    - can i do cod
+    - is there available cash on delivery
+    - is cash on delivery availabe for this product
+    - I want to cash on delivery possible
+    - Is there cash on delivery available?
+    - Do you accept cash on delivery
+    - Do you have COD
+    - Can i get cash on delivery
+    - Hello I need to order cash on delivery
+    - cash on delivery ?
+    - Cash on delivery is available?
+    - Is cash on delivery
+    - can i do cash on deliver
+    - Do you have cash online delivery??
+    - Cash on delivery?
+    - pay when the package arrives
+    - can i pay the rest later on delivery
+
+- intent: delivery_time
+  examples: |
+    - Please tell me when can I get the delivery?
+    - time duration for deliver
+    - Could do you let me know how long will it take you to deliver
+    - do you have same day delivery
+    - Can I know the delivery date 
+    - Hi, do you have delivery to Panadura? if so how many days roughly it will take to deliver? 
+    - date of delivery
+    - When will you deliver these.
+    - How long it ll take to deliver
+    - deliver time
+    - How long does it take to deliver an order to Kalutara
+    - how much time to deliver
+    - delivery dates
+    - How long will it take to deliver
+    - delivery time
+    - how about delivery time
+    - delivery time period
+    - do you have one day delivery service
+    - delivery tim period
+    - how long will it take for the delivery?
+    - how long does it take to deliver my order
+    - How long will it takes to deliver
+    - May I know when can I get it delivered
+    - how much for same day delivery
+    - how long is the delivery
+
+- intent: cancel
+  examples: |
+    - what is the cancelation fee
+    - do i have to pay extra if i cancell a order after confirming
+    - i want to cancel my  order
+    - i want to cancell it
+    - how to cancel the order
+    - are you charge when i cancel the order
+    - sorry i want to cancel my order
+    - need to cancel it
+    - i need to cancel my order
+    - cancel the order
+    - how can i cancel my orders
+    - i don't want the products i ordered can i cancel it
+    - what if i cancel my order
+    - any process to cancel an order
+    - How can I cancel my order?
+    - any cancelation fee
+    - hoow if i cancel it. are you cherge for that
+    - cancel my order plz
+    - i placed an order but now i need to cancel it
+    - i want to cancel it
+    - please giude me to cancel the order
+    - my order needs to cancel
+    - can i know how to cancell a order
+    - i want to change my order to cancel
+
+- intent: pay_method
+  examples: |
+    - can i pay by cash?
+    - paymentt options
+    - can we pay by instalments
+    - paying system
+    - How can i do the payment
+    - can i pay via koko app
+    - I have saw that  intpay option. So how i pay by this. What are the procedures
+    - whata rae the payments options
+    - What is the payment method
+    - Hi, can I do the payment through online transfer instead of card payment?
+    - payment options
+    - list payment methods
+    - How to do the payment
+    - what are the available paying methods
+    - do you take master cards
+    - is there a way pay via visa card when you bring my package
+    - do you accpet master card
+    - pay methods
+    - i want to pay from my debit card
+    - do you take visa cards
+    - how to pay
+    - payment methods
+    - ways of paying to this
+    - do you have credit card payments
+    - need to knoe about your card payments method
+    - can i do debit card payments
+    - What are the payment methods
+
+- intent: check_availability
+  examples: |
+    - [Sensual Sandalwood - Bath & Shower Gel - 250ml](product)
+    - [Hikkaduwa Eau De Perfume - 50ml](product)
+    - [Unawatuna Eau De Perfume - 50ml](product)
+    - [Mirissa Eau De Perfume - 50ml](product)
+    - [Arugambay Eau De Perfume - 50ml](product)
+    - [Sleep Intense - Wellness Trio](product)
+    - [Sleep - Wellness Trio](product)
+    - [Peace - Wellness Trio](product)
+    - [Energise - Wellness Trio](product)
+    - [De-stress - Wellness Trio](product)
+    - [Neroli Jasmine - No Age - Serum Enriched Hand Cream - 30(product)g]
+    - [Ylang Lavender - Hand & Body Lotion 250ml](product)
+    - [Cinnamon Spice - Hand & Body Lotion 250ml](product)
+    - [Sensual Sandalwood - Hand & Body Lotion 250ml](product)
+    - [Ultimate Glow Routine](product)
+    - [Wake Up & Glow Routine](product)
+    - [Ultra Glow Boost Routine](product)
+    - [Beginner Glow Reveal Routine](product)
+    - [Sensual Sandalwood - Body & Pillow Mist - 100ml](product)
+    - [Neroli Jasmine - Calming Body Mist - 100ml](product)
+    - [Surprise Beauty & Wellness Box](product)
+    - [Virgin Coconut Islander Set](product)
+    - [Sleep Intense Islander Set](product)
+    - [Cardamom Rose Islander Set](product)
+    - [Peace Islander Set](product)
+    - [Fruit Paradise - 24 Days Wellness & Beauty Calendar](product)
+    - [Energise - Home Spa Set](product)
+    - [Sensual Sandalwood - Home Spa Set](product)
+    - [Detox - Home Spa Set](product)
+    - [Cardamom Rose - Home Spa Set](product)
+    - [Ceylon Tea - Home Spa Set](product)
+    - [Sleep Intense - Home Spa Set](product)
+    - [De-Stress  - Home Spa Set](product)
+    - [Virgin Coconut - Home Spa Set](product)
+    - [Peace Lemongrass - Home Spa Set](product)
+    - [Sleep - Home Spa Set](product)
+    - [Tuberose - Eau De Perfume Roll-On - 10ml](product)
+    - [Royal Lotus - Eau De Perfume Roll-On - 10ml](product)
+    - [Night Jasmine - Eau de Perfume Roll-On - 10ml](product)
+    - [Island Rose - Eau De Perfume Roll-On - 10ml](product)
+    - [Youth Preserve Boosters (Copy)](product)
+    - [Ashwagandha - Treatment Oil 250Ml](product)
+    - [Assorted](product)
+    - [Aroma Gallery- Buy Any 2 for Rs.2500](product)
+    - [De-Stress  - Home Spa Set](product)
+    - Is this available in stores?
+    - Is this available with you
+    - Is it available or out of stock.
+    - Is this item still Available?
+    - Hi is above item available now?
+    - Is this available to purchase??
+    - is it available ?
+    - Available ?
+    - Is it available?
+    - Are these available
+    - Isn't this available at the moment ?
+    - Is this available?
+    - Availble in syores now?
+    - Is thi available to buy?
+    - Is this pack available ???
+    - Is this available with u
+    - Is this available??
+    - Availability of this?
+    - availablity of that?
+    - Can you tell me is this available?
+    - do you have that?
+    - do u have [sandalwood shower gel](product)
+    - Hi [Sensual Sandalwood Bath Shower Gel](product) still available?
+    - Do you have [Mirissa Eau De Perfume](product)
+    - Can i know if the [Sleep Intense Wellness Trio](product) will still be available at shops?
+    - Do u have [Ylang Lavender Hand & Body Lotion](product).
+    - [Surprise Beauty & Wellness Box](product) one
+    - Is the [Neroli Jasmine Serum Hand Cream](product) still available
+    - [Energise Home Spa Set](product) available now
+    - Is [Cardamom Rose Home Spa Set](product) available in store ?
+    - do you have [Ashwagandha - Treatment Oil 250Ml](product)
+
+- intent: skin_type
+  examples: |
+    - what are the skin types for that?
+    - what should be the skin type for this?
+    - what type of skin is needed for that?
+    - is that suitable for any type of skins?
+    - what are the suitable dosha type for that?
+    - can you tell me the suittable skin type for that?
+    - what is the skin type for this?
+    - skin type for this?
+    - what skin type in [Detox - Red Sandalwood Body Essence 250ml](product)
+    - Can you tell me the Dosha of [Cinnamon Spice - Hand & Body Lotion](product)?
+    - what skin type in [Ylang Ylang Aromaveda Room Fragrance Set White 20Ml](product)
+    - what skin type in [Ylang Lavender - Hand & Body Lotion](product)
+    - what skin type in [Sensual Sandalwood - Bath & Shower Gel](product)
+    - Can you tell me the Dosha of [Beginner Glow Reveal Routine](product)?
+    - Can you tell me the Dosha of [Peace - Wellness Trio](product)?
+    - Can you tell me the Dosha of [Tuberose - Eau De Perfume Roll-On](product)?
+    - what skin type in [Sleep Intense Islander Set](product)
+    - what are the skin types we can use this product
+    - [Sensual Sandalwood - Body & Pillow Mist](product) good for what type of skin?
+    - what kind of skin type can have more benifits by using [Sensual Sandalwood - Hand & Body Lotion](product)
+    - i want to know the most appropriate skin type to use [Ceylon Tea - Home Spa Set](product)
+    - tell me what kind of skin type is most suitable for [Hikkaduwa Eau De Perfume](product)
+    - can you tell me for which skin type [Sleep Intense - Wellness Trio](product) works well
+    - what is the most suitalbe skin type to use [Energise - Wellness Trio](product)
+    - i'm planning to buy [Peace Lemongrass - Home Spa Set](product) but before that i want to know what kind of skin type dose this works better
+    - what skin type in [Tuberose - Eau De Perfume Roll-On](product)
+    - what skin type in [Night Jasmine - Eau de Perfume Roll-On](product)
+    - which skin type if more suitable to use [Aroma Gallery](product)
+    - i bought [Royal Lotus - Eau De Perfume roll](product) from you. but can you tell me what skin type it is most suitable for
+
+- intent: purchase_product
+  examples: |
+    - can I buy that?
+    - I want to buy it now?
+    - Can you tell me how to buy that
+    - I need that
+    - How to purchase that?
+    - I woould like to buy [cardamom rose set](product)
+    - can I buy [ultimate glow routine](product) now?
+    - i need [cinnamon spice body lotion](product)
+    - Buy [night jasmine perfume roll on](product)
+    - i want to buy [detox home spa](product)
+    - I am here to buy [ultra glow boost](product)
+    - [peace lemongrass](product) buy now
+    - can i buy [youth preserve boost](product) now?
+    - can I buy that product now?
+    - please send me how to purchase it
+    - Can I buy [Unawatuna Eau De Perfume](product) now?
+    - I Want to buy [Sensual Sandalwood - Home Spa Set](product)
+    - I need [Youth Preserve Boosters](product)
+    - can you help me to buy [Virgin Coconut Islander Set](product)
+    - I am looking for [Ylang Lavender Hand & Body Lotion](product). Can I buy now?
+    - How to purchase [Arugambay Eau De Perfume](product)
+    - i want to buy [Peace Islander Set](product)
+    - i need [Cardamom Rose  Home Spa Set](product)
+    - i need [Island Rose Eau De Perfume Roll-On](product)
+    - needd to buy [Ashwagandha Treatment Oil](product)
+    - [Detox Home Spa Set](product) buy now 
+
+- intent: check_price
+  examples: |
+    - Prices please
+    - Can I know the price?
+    - Can you check the price of a product?
+    - price pls for this
+    - what is the price
+    - Can I know the price of iro
+    - Wahts the price pls [energise home spa set](product)
+    - prices of these
+    - May i know the price pls [wake up and glow](product)
+    - May I know the price pls?
+    - Can I know the prices of each??
+    - Plz send me the price and details
+    - I wanna buy thisCan you please tell me the price
+    - Please share the price of these products
+    - if so may i know the price [cardamom rose](product)
+    - Can u send me the prices also?
+    - and price plz
+    - Please let me know the price of this [sleep intense islander](product)
+    - Price plz [sandalwood home spa set](product)
+    - How much all the products cost [beginne rglow rveal](product)
+    - can i know the price for above products
+    - Price for this also [virgin coconut spa set](product)
+    - Products details & price plz
+    - Can i know price of these products [sleep home spa set](product)
+    - Prices of your products please?
+    - Can i see your perfume items with prices? Please can u send me it?
+    - how much is that?
+    - how about the price of that
+    - price of it?
+    - how much is it?
+    - send the price of that
+    - price [ceylon tea home spa set](product)
+    - How much is for [Fruit Paradise Wellness & Beauty Calendar](product)
+    - tell me the price of [Sensual Sandalwood Bath & Shower Gel](product)
+    - Can I know the price of [Energise Wellness Trio](product)
+    - I need the price of [Ceylon Tea Home Spa Set](product)
+    - Can you send me how much is for [Virgin Coconut Islander Set](product)
+    - [Neroli Jasmine Calming Body Mist](product) price?
+    - [Peace Lemongrass  Home Spa Set](product) how much?
+    - price for [Arugambay Eau De Perfume](product)
+
+- intent: ingredients
+  examples: |
+    - what does it contain?
+    - what are the ingredients of that?
+    - what is inside?
+    - what are inside?
+    - can you tell me about the ingredients of that
+    - what are the included herbs of that?
+    - what is the ingredients of [Sleep Wellness Trio](product)
+    - tell me about the ingredients in [Neroli Jasmine](product)?
+    - I need the ingredients in [Ashwagandha Treatment Oil](product)
+    - What are the included ingredients of [Mirissa Perfume Roll](product)
+    - I want to know about ingredients in [Virgin Coconut Islander](product)
+    - tell me the ingredients you use to make [Neroli Jasmine Serum Enriched Hand Cream](product)
+    - I want to know the ingredients in [Cinnamon Spice  Hand Body Lotion](product)
+    - what are the key ingredients of [Ylang Lavender Hand & Body Lotion](product)? can you tell me
+    - what is the ingredients of [Sleep Intense](product)
+    - tell me about the ingredients in [Royal Lotus Perfume Roll On](product)?
+    - I need the ingredients in [Ashwagandha Oil](product)
+    - What are the included ingredients in [Peace Lemongrass](product)
+    - I want to know about ingredients in [Surprise Beauty & Wellness Box](product)
+    - tell me the ingredients you use to make [Ultimate Glow Routine](product)
+    - I want to know the ingredients of [Night Jasmine Roll-On](product)
+    - what are the key ingredients of [Beach Aroma Duo Packs](product)? can you tell me
+    - what this [Peace Islander Set](product) contain?
+
+- intent: benifits
+  examples: |
+    - what are the benifits?
+    - tell me the benifits of using this
+    - how can i get benifits from this
+    - how about the benifits
+    - benifits?
+    - how about the results I can get by using this?
+    - can you tell me the benifits of using [sleep intense wellness trio](product)
+    - tell me about the benifits i can get form using  [ashwagandha(product)]  as a food supplement
+    - dose it have any added benifits from using  [sleep home spa set](product)
+    - what are the benifits of using [caramom rose islander set](product)
+    - what kind of skin type can have more benifits by using [cardomom rose body & pillow mist](product)
+    - what kind of benifits i would have after using  [beach aroma](product)
+    - tell me the benifits of using [ultimate glow routine](product) for my face
+    - what are the benifits of using [virgin coconut home spa](product) based products
+    - tell me more about the benifits of using  [sandalwood body pillow mist](product)
+    - what is the skin type which can benifits from using [ylang lavendar body lotion](product)
+    - what kind of benifits my  hair  can have by using  [energise home spa set](product)
+    - what are the benifits of using [peace islander](product)
+    - benifits of [neroli jasmine calming body mist](product)
+    - can you explain some benifits of using [sleep wellness trio](product)
+    - tell aboutt benifits of using [island rose perfume rollon](product)
+
+- synonym: skin types
+  examples: |
+    - dosha types
+    - hair types
+    - skin types
+    
+# - lookup: product
+#   examples: |
+#     - [Sensual Sandalwood - Bath & Shower Gel - 250ml](product)
+#     - [Hikkaduwa Eau De Perfume - 50ml](product)
+#     - [Unawatuna Eau De Perfume - 50ml](product)
+#     - [Mirissa Eau De Perfume - 50ml](product)
+#     - [Arugambay Eau De Perfume - 50ml](product)
+#     - [Sleep Intense - Wellness Trio](product)
+#     - [Sleep - Wellness Trio](product)
+#     - [Peace - Wellness Trio](product)
+#     - [Energise - Wellness Trio](product)
+#     - [De-stress - Wellness Trio](product)
+#     - [Neroli Jasmine - No Age - Serum Enriched Hand Cream - 30(product)g]
+#     - [Ylang Lavender - Hand & Body Lotion 250ml](product)
+#     - [Cinnamon Spice - Hand & Body Lotion 250ml](product)
+#     - [Sensual Sandalwood - Hand & Body Lotion 250ml](product)
+#     - [Ultimate Glow Routine](product)
+#     - [Wake Up & Glow Routine](product)
+#     - [Ultra Glow Boost Routine](product)
+#     - [Beginner Glow Reveal Routine](product)
+#     - [Sensual Sandalwood - Body & Pillow Mist - 100ml](product)
+#     - [Neroli Jasmine - Calming Body Mist - 100ml](product)
+#     - [Surprise Beauty & Wellness Box](product)
+#     - [Virgin Coconut Islander Set](product)
+#     - [Sleep Intense Islander Set](product)
+#     - [Cardamom Rose Islander Set](product)
+#     - [Peace Islander Set](product)
+#     - [Fruit Paradise - 24 Days Wellness & Beauty Calendar](product)
+#     - [Energise - Home Spa Set](product)
+#     - [Sensual Sandalwood - Home Spa Set](product)
+#     - [Detox - Home Spa Set](product)
+#     - [Cardamom Rose - Home Spa Set](product)
+#     - [Ceylon Tea - Home Spa Set](product)
+#     - [Sleep Intense - Home Spa Set](product)
+#     - [De-Stress  - Home Spa Set](product)
+#     - [Virgin Coconut - Home Spa Set](product)
+#     - [Peace Lemongrass - Home Spa Set](product)
+#     - [Sleep - Home Spa Set](product)
+#     - [Tuberose - Eau De Perfume Roll-On - 10ml](product)
+#     - [Royal Lotus - Eau De Perfume Roll-On - 10ml](product)
+#     - [Night Jasmine - Eau de Perfume Roll-On - 10ml](product)
+#     - [Island Rose - Eau De Perfume Roll-On - 10ml](product)
+#     - [Youth Preserve Boosters (Copy)](product)
+#     - [Ashwagandha - Treatment Oil 250Ml](product)
+#     - [Assorted](product)
+#     - [Aroma Gallery- Buy Any 2 for Rs.2500](product)
+#     - [De-Stress  - Home Spa Set](product)
