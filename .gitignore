@@ -133,3 +133,4 @@ dmypy.json
 __pycache__
 models
 testings.ipynb
+.DS_Store

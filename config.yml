@@ -8,10 +8,8 @@ pipeline:
 #    case_sensitive: False
 
   - name: WhitespaceTokenizer
-    case_sensitive: False
-#    intent_tokenization_flag: False
-#    intent_split_symbol: "_"
-#    token_pattern: None
+    intent_tokenization_flag: False
+    intent_split_symbol: "_"
 
   - name: RegexFeaturizer
 
@@ -19,14 +17,15 @@ pipeline:
 
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
+    case_sensitive: False
     analyzer: char_wb
     min_ngram: 1
     max_ngram: 4
 
-#  - name: LanguageModelFeaturizer
-#    model_name: bert
-#    model_weights: rasa/LaBSE
-#    cache_dir: null
+  - name: LanguageModelFeaturizer
+    model_name: bert
+    model_weights: rasa/LaBSE
+    cache_dir: null
 
   - name: DIETClassifier
     epochs: 600
