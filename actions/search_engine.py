@@ -158,9 +158,3 @@ class SearchEngine():
         else:
             result = None 
         return result
-
-def Decimal(number):
-    if float(number)%1==0:
-        return int(number)
-    return float(number)
-
