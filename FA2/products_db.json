@@ -377,21 +377,6 @@
     "checkout_url": "https://lk.spaceylon.com/product/virgin-coconut-home-spa-set-2/"
   },
   {
-    "product_id": 817011,
-    "product_name": "Peace Lemongrass - Home Spa Set",
-    "price": "9500",
-    "benifits": "Indulge your body, mind & soul with this selection of indulgent pampering Ayurveda body care formulae infused with precious Ceylonese herbs & pure aromatic essential oils to de-stress, calm & relax the senses, promoting total peace & tranquillity. Organic Ceylon Lemongrass helps calm & balance the senses, promoting inner peace. Soothing Lavender gently relaxes, while precious Spike Lavender helps restore tranquillity. Pure Peppermint cools body & helps clarify senses.\r\n\r\nPeace - Bath & Shower Gel - 50ml \r\nTotal rejuvenation with a blend of herbs & essential oils to promote peace & harmony. Organic Lemongrass helps calm & balance the senses, promoting inner peace. \r\n\r\nPeace - Hand & Body Lotion - 50ml - \r\nA light moisturiser with a blend of herbs & essential oils to promote peace & harmony. Organic Lemongrass helps calm & balance the senses, promoting inner peace.\r\n\r\nPeace - Body Scrub - 30g -\r\nA naturally aromatic & creamy Ayurveda formula infused with powerful herbs & minerals. Deep acting Ceylon Margosa & Walnut combine to help purify skin, clearing clogged pores, removing toxins & dead cells.\r\n\r\nPeace - Relaxing Body & Pillow Mist - 20ml -\r\nA soothing & protective mist with a blend of herbs & essential oils to promote peace & harmony.\r\n\r\nLemongrass Mandarin - Luxury Soap - 50g - \r\nA luxuriously creamy natural cleanser enriched with Virgin Coconut, Rice Bran, Wheatgerm & Almond to moisturise, nourish & soften skin.\r\n\r\nPeace - Soothing Balm - 8g - \r\nInstant natural cooling & soothing relief from stress, headache, congestion & related discomfort. Gently soothes & clarifies the senses",
-    "available": false,
-    "instructions": null,
-    "skin_type": "Tridosha \u2013 Suitable for All Dosha & Skin Types",
-    "ingredients": [
-      "Lemongrass",
-      "Peppermint"
-    ],
-    "image": "https://lk.spaceylon.com/wp-content/uploads/2022/10/home-spa-set-peace.jpg",
-    "checkout_url": "https://lk.spaceylon.com/product/peace-lemongrass-home-spa-set/"
-  },
-  {
     "product_id": 816996,
     "product_name": "Sleep - Home Spa Set",
     "price": "9500",
@@ -576,10 +561,10 @@
     "checkout_url": null
   },
   {
-    "product_id": 21,
-    "product_name": "Rootica Test 5",
-    "price": "2000.00",
-    "benifits": "good for skin",
+    "product_id": 111222,
+    "product_name": "Rootica Test 7",
+    "price": "1000.00",
+    "benifits": "bad for skin",
     "available": true,
     "instructions": "Massage well",
     "skin_type": "tridosha - for all skins",
@@ -588,6 +573,36 @@
       "herbs"
     ],
     "image": "https://lk.spaceylon.com/222222.jpg",
-    "checkout_url": null
+    "checkout_url": "https://lk.spaceylon.com/product/222222/"
+  },
+  {
+    "product_id": 121212,
+    "product_name": "Rootica Test 7",
+    "price": "1450.00",
+    "benifits": "bad for skin",
+    "available": true,
+    "instructions": "Massage well",
+    "skin_type": "tridosha - for all skins",
+    "ingredients": [
+      "wonder",
+      "herbs"
+    ],
+    "image": "https://lk.spaceylon.com/222222.jpg",
+    "checkout_url": "https://lk.spaceylon.com/product/222222/"
+  },
+  {
+    "product_id": 212,
+    "product_name": "Rootica Test 7",
+    "price": "1000.00",
+    "benifits": "bad for skin",
+    "available": true,
+    "instructions": "Massage well",
+    "skin_type": "tridosha - for all skins",
+    "ingredients": [
+      "wonder",
+      "herbs"
+    ],
+    "image": "https://lk.spaceylon.com/222222.jpg",
+    "checkout_url": "https://lk.spaceylon.com/product/222222/"
   }
 ]

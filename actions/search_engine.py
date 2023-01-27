@@ -5,8 +5,7 @@ import nltk.corpus.reader.wordnet as wn
 from nltk.stem import WordNetLemmatizer
 from rank_bm25 import BM25Okapi
 import numpy as np
-import json
-import re
+from FA2.boto3_dynamodb import DynamoDBCRUD
 
 def tokenize_text(text):
     tokens = nltk.word_tokenize(text) 
@@ -66,7 +65,6 @@ def normalize_corpus(corpus, lemmatize=True, stopwords=True):
         ## Lowercase letters
         text = text.lower()
         ## Contraction map
-        #text = expand_contractions(text, CONTRACTION_MAP)
         if lemmatize:
         ## Lemmatization
             text = lemmatize_text(text)
@@ -90,8 +88,6 @@ def normalize_string(string, lemmatize=True, stopwords=True):
     for text in string:
         ## Lowercase letters
         text = text.lower()
-        ## Contraction map
-        #text = expand_contractions(text, CONTRACTION_MAP)
         if lemmatize:
         ## Lemmatization
             text = lemmatize_text(text)
@@ -115,39 +111,39 @@ def ngrams(string, n=3):
 
 class SearchEngine():
     def __init__(self):  
-        f = open('/Users/Sachith/Rootica/actions/products_db.json', 'r')
-        self.product_db = json.load(f)
-        f.close()
+        boto3_dynamodb = DynamoDBCRUD()
+        self.products_db = boto3_dynamodb.get_all().values()
 
     def preprocess(self):
-        data = []
+        names = []
+        ids = []
         for i in self.products_db:
             name = i.get('product_name')
-            data.append(name)
+            id = i.get('product_id')
+            names.append(name)
+            ids.append(id)
 
         # Normalize the corpus as usual
-        norm_product_names = normalize_corpus(data, lemmatize=True, stopwords=True)
+        norm_product_names = normalize_corpus(names, lemmatize=True, stopwords=True)
 
         corpus = norm_product_names
         tokenized_corpus = [name.split(" ") for name in corpus]
         tokenized_corpus = []
         for name in corpus:
-            #print(name)
             doc_tokens = name.split()
-            #print(doc_tokens)
             tokenized_corpus.append(doc_tokens)
 
         tok_list = []
         for name in corpus:
             a = name.split() + ngrams(name, 1) + ngrams(name, 2) + ngrams(name, 3)
             tok_list.append(a)
-        return tok_list, data
+        return tok_list, ids
 
     def bm_25(self, tok_list):
         bm25 = BM25Okapi(tok_list)
         return bm25
 
-    def search(self, bm25, name, data, num_bm=5):
+    def search(self, bm25, name, ids, num_bm=1):
         if name!=None:
             input = name
             for n in normalize_string(input):
@@ -158,7 +154,13 @@ class SearchEngine():
             if max < 20.0:
                 result = None
             else:
-                result = bm25.get_top_n(tokenized_name, data, n=num_bm)
+                result = bm25.get_top_n(tokenized_name, ids, n=num_bm)
         else:
             result = None 
         return result
+
+def Decimal(number):
+    if float(number)%1==0:
+        return int(number)
+    return float(number)
+

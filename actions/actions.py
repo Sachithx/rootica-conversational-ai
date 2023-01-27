@@ -1,25 +1,15 @@
-import nltk.corpus.reader.wordnet as wn
-from nltk.stem import WordNetLemmatizer
-from rank_bm25 import BM25Okapi
-import numpy as np
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from search_engine import SearchEngine
-import json
+from FA2.boto3_dynamodb import DynamoDBCRUD
 
 def search(name):
     a = SearchEngine()
-    tok_list, data = a.preprocess()
+    tok_list, ids = a.preprocess()
     bm_25 = a.bm_25(tok_list)
-    result = a.search(bm_25, name, data)
+    result = a.search(bm_25, name, ids)
     return result
-
-### Custom actions ###
-## Import the product database and do the transformations
-f = open('products_db.json', 'r')
-products_db = json.load(f)
-f.close()
 
 class ActionAvailability(Action):
 
@@ -33,12 +23,11 @@ class ActionAvailability(Action):
         #current_product = next(tracker.get_latest_entity_values("product"), None)
         x = search(current_product)
         if x != None:
-            for i in products_db:
-                if i['product_name']==x[0]:
-                    if i.get('image')!=None:
-                        result = f"{x[0]} is Available. {i['image']}" if i['available'] else f"Sorry! {x[0]} is Not Available."
-                    else:
-                        result = f"{x[0]} is Available. No preview available!" if i['available'] else f"Sorry! {x[0]} is Not Available."
+            i = DynamoDBCRUD().get_product(x[0])
+            if i.get('image')!=None:
+                result = f"{i['product_name']} is Available. {i['image']}" if i['available'] else f"Sorry! {i['product_name']} is Not Available."
+            else:
+                result = f"{i['product_name']} is Available. No preview available!" if i['available'] else f"Sorry! {i['product_name']} is Not Available."
         else:
             result = f"Sorry! We cannot find the product. Please mention the Product you want and try again!"
 
@@ -58,9 +47,8 @@ class ActionSkinType(Action):
         #current_product = next(tracker.get_latest_entity_values("product"), None)
         x = search(current_product)
         if x != None:
-            for i in products_db:
-                if i['product_name']==x[0]:
-                    result = f"{x[0]} is good for {i['skin_type']}!" if i['skin_type'] != None else f"Sorry! {x[0]} skin type information is not available!"
+            i = DynamoDBCRUD().get_product(x[0])
+            result = f"{i['product_name']} is good for {i['skin_type']}!" if i['skin_type'] != None else f"Sorry! {i['product_name']} skin type information is not available!"
         else:
             result = "Sorry! We cannot find the product. Please mention the Product you want and try again!"
 
@@ -80,9 +68,8 @@ class ActionPrice(Action):
         #current_product = next(tracker.get_latest_entity_values("product"), None)
         x = search(current_product)
         if x != None:
-            for i in products_db:
-                if i['product_name']==x[0]:
-                    result = f"{x[0]} is  Rs: {i['price']}!" if i['price'] != None else f"Sorry! {x[0]} Price is not available!"
+            i = DynamoDBCRUD().get_product(x[0])
+            result = f"{i['product_name']} is  Rs: {i['price']}!" if i['price'] != None else f"Sorry! {i['product_name']} Price is not available!"
         else:
             result = "Sorry! We cannot find the product. Please mention the Product you want and try again!"
 
@@ -102,9 +89,8 @@ class ActionIngredients(Action):
         #current_product = next(tracker.get_latest_entity_values("product"), None)
         x = search(current_product)
         if x != None:
-            for i in products_db:
-                if i['product_name']==x[0]:
-                    result = "Ingredients of"+" "+ x[0]+"\n"+ '\n'.join(i['ingredients']) if i['ingredients']!= None else f"Sorry! {x[0]} Ingredients information is not available!"
+            i = DynamoDBCRUD().get_product(x[0])
+            result = "Ingredients of"+" "+ i['product_name'] +"\n"+ '\n'.join(i['ingredients']) if i['ingredients']!= None else f"Sorry! {i['product_name']} Ingredients information is not available!"
         else:
             result = "Sorry! We cannot find the product. Please mention the Product you want and try again!"
 
@@ -124,9 +110,8 @@ class ActionPurchase(Action):
         #current_product = next(tracker.get_latest_entity_values("product"), None)
         x = search(current_product)
         if x != None:
-            for i in products_db:
-                if i['product_name']==x[0]:
-                    result = f"Please click this link and purchase {x[0]} through our website: {i['checkout_url']}!" if i['checkout_url'] != None else f"Sorry! {x[0]} purchase link is not available!"
+            i = DynamoDBCRUD().get_product(x[0])
+            result = f"Please click this link and purchase {i['product_name']} through our website: {i['checkout_url']}!" if i['checkout_url'] != None else f"Sorry! {i['product_name']} purchase link is not available!"
         else:
             result = "Sorry! We cannot find the product. Please mention the Product you want and try again!"
 
@@ -146,9 +131,8 @@ class ActionBenifits(Action):
         #current_product = next(tracker.get_latest_entity_values("product"), None)
         x = search(current_product)
         if x != None:
-            for i in products_db:
-                if i['product_name']==x[0]:
-                    result = f"{x[0]} Benifits: {i['benifits']}!" if i['benifits'] != None else f"Sorry! {x[0]} Benifits information is not available!"
+            i = DynamoDBCRUD().get_product(x[0])
+            result = f"{i['product_name']} Benifits: {i['benifits']}!" if i['benifits'] != None else f"Sorry! {i['product_name']} Benifits information is not available!"
         else:
             result = "Sorry! We cannot find the product. Please mention the Product you want and try again!"
 
