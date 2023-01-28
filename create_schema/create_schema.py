@@ -3,11 +3,8 @@ import html
 
 class CreateSchema():
     def __init__(self, path):         
-        # Opening JSON file
         f = open(path)
-        # returns JSON object as a dictionary
         self.data = json.load(f)
-        # Closing file
         f.close()
 
     def build(self):

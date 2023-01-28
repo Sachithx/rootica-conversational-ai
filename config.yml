@@ -28,7 +28,7 @@ pipeline:
     cache_dir: null
 
   - name: DIETClassifier
-    epochs: 600
+    epochs: 1000
     constrain_similarities: true
 
 #  - name: RegexEntityExtractor
