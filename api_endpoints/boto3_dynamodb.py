@@ -155,30 +155,30 @@ class DynamoDBCRUD():
             PRIMARY_COLUMN_NAME: product_id
           },
           UpdateExpression="""SET 
-          product_name = :val1,
-          price = :val2,
-          benifits = :val3,
-          available = :val4,
-          instructions = :val5,
-          skin_type = :val6,
-          ingredients = :val7,
-          image = :val8,
-          checkout_url = :val9
+            product_name = :val1,
+            price = :val2,
+            benifits = :val3,
+            available = :val4,
+            instructions = :val5,
+            skin_type = :val6,
+            ingredients = :val7,
+            image = :val8,
+            checkout_url = :val9
           """,
           ExpressionAttributeValues= {
-          ":val1": product.get('product_name'),
-          ":val2": product.get('price'),
-          ":val3": product.get('benifits'),
-          ":val4": product.get('available'),
-          ":val5": product.get('instructions'),
-          ":val6": product.get('skin_type'),
-          ":val7": product.get('ingredients'),
-          ":val8": product.get('image'),
-          ":val9": product.get('checkout_url')
+            ":val1": product.get('product_name'),
+            ":val2": product.get('price'),
+            ":val3": product.get('benifits'),
+            ":val4": product.get('available'),
+            ":val5": product.get('instructions'),
+            ":val6": product.get('skin_type'),
+            ":val7": product.get('ingredients'),
+            ":val8": product.get('image'),
+            ":val9": product.get('checkout_url')
           },
           ConditionExpression = "attribute_exists(product_id)"
     )
-      return {'state':True}
+      return {'state':True, 'message': "Updated the product successfully."}
 
     except:
       return {'state': False, 'message': "Couldn't update the Product."}
