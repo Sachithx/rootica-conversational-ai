@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d5a71a6-ac4a-4045-9b99-c41c5f214cbf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/actions/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions/actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/boto3_dynamodb.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_endpoints/boto3_dynamodb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_endpoints/function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/function_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_endpoints/function_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_endpoints/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/rules.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/rules.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/domain.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_schema/create_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_schema/create_schema.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/api_endpoints/boto3_dynamodb.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,7 +38,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.file-colors&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -53,7 +51,8 @@
       <option name="presentableId" value="Default" />
       <updated>1675575885260</updated>
       <workItem from="1675575886367" duration="4385000" />
-      <workItem from="1675583425782" duration="888000" />
+      <workItem from="1675583425782" duration="2122000" />
+      <workItem from="1675589902561" duration="654000" />
     </task>
     <servers />
   </component>
@@ -72,6 +71,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/rootica_conversational_ai$actions.coverage" NAME="actions Coverage Results" MODIFIED="1675585500779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/actions" />
     <SUITE FILE_PATH="coverage/rootica_conversational_ai$boto3_dynamodb.coverage" NAME="boto3_dynamodb Coverage Results" MODIFIED="1675584144598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api_endpoints" />
   </component>
 </project>
