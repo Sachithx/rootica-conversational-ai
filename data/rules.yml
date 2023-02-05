@@ -83,7 +83,7 @@ rules:
   - intent: purchase_product
   - action: action_purchase
 
-- rule: Show benifits
+- rule: Show benefits
   steps:
-  - intent: benifits
-  - action: action_benifits
+  - intent: benefits
+  - action: action_benefits

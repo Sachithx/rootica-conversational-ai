@@ -2,24 +2,25 @@ from boto3_dynamodb import DynamoDBCRUD
 boto3_dynamodb = DynamoDBCRUD()
 # database = boto3_dynamodb.get_all()
 
-class CRUD():
+
+class CRUD:
     def __init__(self) -> None:
         """
-        This is an initialisation of CRUD capablities.
-        This gets an input of product databse.
+        This is an initialisation of CRUD capabilities.
+        This gets an input of product database.
 
         params:
         product_db : dictionary of all the products,
             key : Product ID
-            value: Product Details as another dictionary.    
+            value: Product Details as another dictionary.
         """
         pass
 
     def product_query(self):
         """
-        This outputs the set of all the products inside the databse.
+        This outputs the set of all the products inside the database.
         Also, it can get input of limit, which can limit number of products
-        it should appear from the begining.
+        it should appear from the beginning.
         params:
         product
         limit : integer
@@ -45,7 +46,7 @@ class CRUD():
             dictionary of all the information on the given product,
         """
         try:
-            if boto3_dynamodb.get_product(product_id).get('state') == None:
+            if boto3_dynamodb.get_product(product_id).get('state') is None:
                 return boto3_dynamodb.get_product(product_id)
             else:
                 return {'state': False, 'message': 'Cannot retrieve the Product.'}
@@ -53,7 +54,7 @@ class CRUD():
         except Exception as exception:
             return {
                 "state": False,
-                "message": f"getting product information is not successfull. Error: {exception}"
+                "message": f"getting product information is not successful. Error: {exception}"
                 }
 
     def create_product(self, product):
@@ -64,7 +65,7 @@ class CRUD():
                     product_id: int
                     product_name: Optional[str] = None
                     price: Optional[str] = None
-                    benifits: Optional[str] = None
+                    benefits: Optional[str] = None
                     available: Optional[bool] = None
                     instructions: Optional[str] = None
                     skin_type: Optional[str] = None
@@ -76,8 +77,8 @@ class CRUD():
             None
         """
         try:
-            product_id = product.product_id
-            if boto3_dynamodb.create_product(product).get('state')==True:
+            # product_id = product.product_id
+            if boto3_dynamodb.create_product(product).get('state'):
                 boto3_dynamodb.create_product(product)
                 return {'state': True, 'message': f"Successfully created product."}
             else:
@@ -95,7 +96,7 @@ class CRUD():
             None
         """
         try:
-            if boto3_dynamodb.delete_product(product_id).get('state')==True:
+            if boto3_dynamodb.delete_product(product_id).get('state'):
                 boto3_dynamodb.delete_product(product_id)
                 return {'state': True, 'message': f"Successfully deleted product."}
             else:
@@ -113,7 +114,7 @@ class CRUD():
                     product_id: int
                     product_name: Optional[str] = None
                     price: Optional[str] = None
-                    benifits: Optional[str] = None
+                    benefits: Optional[str] = None
                     available: Optional[bool] = None
                     instructions: Optional[str] = None
                     skin_type: Optional[str] = None
@@ -131,10 +132,12 @@ class CRUD():
             old_product = boto3_dynamodb.get_product(product_id)
             old_product.update(product.dict(exclude_none=True))
             new_product = old_product
-            if boto3_dynamodb.update_product(product_id, new_product).get('state')==True:
+            if boto3_dynamodb.update_product(product_id, new_product).get('state'):
                 boto3_dynamodb.update_product(product_id, new_product)
                 return {'state': True, 'message': f"Successfully updated product"}
-            else: return {'state': False, 'message': boto3_dynamodb.update_product(product_id, new_product).get('message')}
+            else:
+                return {'state': False,
+                        'message': boto3_dynamodb.update_product(product_id, new_product).get('message')}
         
         except Exception as exception:
             print(exception)
