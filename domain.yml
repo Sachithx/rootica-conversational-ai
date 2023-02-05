@@ -17,7 +17,7 @@ intents:
   - purchase_product
   - check_price
   - ingredients
-  - benifits
+  - benefits
 
 entities:
   - product
@@ -93,7 +93,7 @@ actions:
   - action_ingredients
   - action_price
   - action_purchase
-  - action_benifits
+  - action_benefits
 
 session_config:
   session_expiration_time: 60

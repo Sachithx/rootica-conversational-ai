@@ -1,7 +1,8 @@
 import json
 import html
 
-class CreateSchema():
+
+class CreateSchema:
     def __init__(self, path):         
         f = open(path)
         self.data = json.load(f)
@@ -10,55 +11,43 @@ class CreateSchema():
     def build(self):
         products_db = []
         for prod in self.data:
-                dict = {
-                        "product_id": None,
-                        "product_name": None,
-                        "price": None,
-                        "benifits": None,
-                        "available": None,
-                        "instructions": None,
-                        "skin_type": None,
-                        "ingredients": None,
-                        "image": None,
-                        "checkout_url": None
-                }
+            dic = {
+                "product_id": prod.get('id'),
+                "product_name": html.unescape(prod.get('name')),
+                "price": prod.get('price') if len(prod.get('price')) != 0 else None,
+                "benefits": None,
+                "available": None,
+                "instructions": None,
+                "skin_type": None,
+                "ingredients": None,
+                "image": None,
+                "checkout_url": None
+                   }
 
-                ## Product ID
-                dict["product_id"] = prod.get('id')      
-                
-                ## Product Name
-                dict["product_name"] = html.unescape(prod.get('name'))           
-                
-                ## Price
-                dict["price"] = prod.get('price') if len(prod.get('price'))!=0 else None
+            # Benefits
+            for i in prod.get('meta_data'):
+                if i.get('key') == "product_components_0_details_0_description":
+                    dic["benefits"] = i.get('value')
+                    break
 
-                ## Benifits
-                for i in prod.get('meta_data'):
-                    if i.get('key')=="product_components_0_details_0_description":
-                        dict["benifits"] = i.get('value')
-                        break
+            # Availability
+            dic["available"] = True if prod.get('stock_status') == 'instock' else False
 
-                ## Availability
-                dict["available"] = True if prod.get('stock_status')=='instock' else False 
+            # Dosha Types
+            for i in prod.get('attributes'):
+                if i.get('name') == "Dosha Types":
+                    dic["skin_type"] = html.unescape(i.get('options')[0])
 
-                ## Dosha Types
-                for i in prod.get('attributes'):
-                        if i.get('name')=="Dosha Types":
-                                dict["skin_type"] = html.unescape(i.get('options')[0])
+            # Ingredients
+            for i in prod.get('attributes'):
+                if i.get('name') == "Wonder Herbs":
+                    dic["ingredients"] = i.get('options')
 
-                ## Ingredients
-                for i in prod.get('attributes'):
-                        if i.get('name')=="Wonder Herbs":
-                                dict["ingredients"] = i.get('options')  
-                
-                ## Images
-                for i in prod.get('images'):
-                        dict["image"] = prod.get('images')[0].get('src')
+            # Images
+            dic["image"] = prod.get('images')[0].get('src')
 
-                ## Purchase Link
-                dict["checkout_url"] = prod.get('permalink')
+            # Purchase Link
+            dic["checkout_url"] = prod.get('permalink')
 
-                products_db.append(dict)
+            products_db.append(dic)
         return products_db
-
-
