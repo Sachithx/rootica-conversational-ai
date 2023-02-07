@@ -1,0 +1,35 @@
+version: '1'
+
+services:
+
+  rasa_enable_api:
+    image: rootica_rasa_enable_api
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    env_file:
+      - aws_keys.env
+    container_name: rasa_enable_api
+    volumes:
+      - ./:/rootica-conversational-ai
+    restart: always
+    ports:
+      - 5005:5005
+    network_mode: default
+    command: rasa run --enable-api
+
+  rasa_action_server:
+    image: rootica_rasa_action_server
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    env_file:
+      - aws_keys.env
+    container_name: rasa_action_server
+    volumes:
+      - ./:/rootica-conversational-ai
+    restart: always
+    ports:
+      - 5055:5055
+    network_mode: default
+    command: rasa run actions
