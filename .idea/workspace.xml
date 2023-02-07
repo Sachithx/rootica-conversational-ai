@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d5a71a6-ac4a-4045-9b99-c41c5f214cbf" name="Changes" comment="Created dockerfile and docker-compose files">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="2d5a71a6-ac4a-4045-9b99-c41c5f214cbf" name="Changes" comment="Created dockerfile and docker-compose files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,7 +195,7 @@
       <workItem from="1675654950902" duration="337000" />
       <workItem from="1675655295232" duration="8068000" />
       <workItem from="1675737690841" duration="24611000" />
-      <workItem from="1675773611266" duration="2337000" />
+      <workItem from="1675773611266" duration="2512000" />
     </task>
     <task id="LOCAL-00001" summary="added create schema script">
       <created>1675590659662</created>
