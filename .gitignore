@@ -4,3 +4,5 @@ __pycache__
 models
 testings.ipynb
 .DS_Store
+workspace.xml
+aws_keys.env
