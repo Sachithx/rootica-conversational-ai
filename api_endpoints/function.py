@@ -16,7 +16,8 @@ class CRUD:
         """
         pass
 
-    def product_query(self):
+    @staticmethod
+    def product_query():
         """
         This outputs the set of all the products inside the database.
         Also, it can get input of limit, which can limit number of products
@@ -37,7 +38,8 @@ class CRUD:
                 }
             ]
     
-    def product(self, product_id):
+    @staticmethod
+    def product(product_id):
         """
         This function retrieves the product information for a given product ID
         params:
@@ -57,7 +59,8 @@ class CRUD:
                 "message": f"getting product information is not successful. Error: {exception}"
                 }
 
-    def create_product(self, product):
+    @staticmethod
+    def create_product(product):
         """
         This function can create a new product in the database on given product info.
         params:
@@ -87,7 +90,8 @@ class CRUD:
         except Exception as exception:
             return {'state': False, 'message': f"Couldn't create the product. {exception}"}
 
-    def delete_product(self, product_id):
+    @staticmethod
+    def delete_product(product_id):
         """
         This function can delete a product for a given product ID
         params:
@@ -105,7 +109,8 @@ class CRUD:
         except Exception as exception:
             return {'state': False, 'message': f"Couldn't deleted product: {product_id}: {exception}"}
     
-    def update_product(self, product):
+    @staticmethod
+    def update_product(product):
         """
         This function can edit product information inside each product.
         for given product.
