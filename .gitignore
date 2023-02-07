@@ -4,4 +4,9 @@ __pycache__
 models
 testings.ipynb
 .DS_Store
+<<<<<<< HEAD
+=======
+workspace.xml
+>>>>>>> refs/remotes/origin/main
 aws_keys.env
+.idea/workspace.xml
