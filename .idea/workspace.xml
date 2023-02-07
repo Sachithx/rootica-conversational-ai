@@ -5,32 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d5a71a6-ac4a-4045-9b99-c41c5f214cbf" name="Changes" comment="Created dockerfile and docker-compose files">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rootica-conversational-ai.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CRUDDockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RasaDockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions/actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/boto3_dynamodb.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_endpoints/boto3_dynamodb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_endpoints/function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/function_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_endpoints/function_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_endpoints/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/products_db.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/test/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_schema/create_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_schema/create_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/rules.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/rules.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/domain.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +197,7 @@
       <workItem from="1675654950902" duration="337000" />
       <workItem from="1675655295232" duration="8068000" />
       <workItem from="1675737690841" duration="24611000" />
-      <workItem from="1675773611266" duration="2717000" />
+      <workItem from="1675773611266" duration="2825000" />
     </task>
     <task id="LOCAL-00001" summary="added create schema script">
       <created>1675590659662</created>
