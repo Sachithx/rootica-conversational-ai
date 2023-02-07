@@ -16,12 +16,12 @@ class CreateSchema:
                 "product_name": html.unescape(prod.get('name')),
                 "price": prod.get('price') if len(prod.get('price')) != 0 else None,
                 "benefits": None,
-                "available": None,
+                "available": True if prod.get('stock_status') == 'instock' else False,
                 "instructions": None,
                 "skin_type": None,
                 "ingredients": None,
-                "image": None,
-                "checkout_url": None
+                "image": prod.get('images')[0].get('src'),
+                "checkout_url": prod.get('permalink')
                    }
 
             # Benefits
@@ -29,9 +29,6 @@ class CreateSchema:
                 if i.get('key') == "product_components_0_details_0_description":
                     dic["benefits"] = i.get('value')
                     break
-
-            # Availability
-            dic["available"] = True if prod.get('stock_status') == 'instock' else False
 
             # Dosha Types
             for i in prod.get('attributes'):
@@ -42,12 +39,6 @@ class CreateSchema:
             for i in prod.get('attributes'):
                 if i.get('name') == "Wonder Herbs":
                     dic["ingredients"] = i.get('options')
-
-            # Images
-            dic["image"] = prod.get('images')[0].get('src')
-
-            # Purchase Link
-            dic["checkout_url"] = prod.get('permalink')
 
             products_db.append(dic)
         return products_db

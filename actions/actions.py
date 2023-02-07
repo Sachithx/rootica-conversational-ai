@@ -2,7 +2,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from search_engine.search_engine import SearchEngine
-from api_endpoints.boto3_dynamodb import DynamoDBCRUD
+from boto3_dynamodb import DynamoDBCRUD
 
 
 def search(name):
