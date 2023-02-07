@@ -1,6 +1,5 @@
 rasa==3.4.1
 rasa-sdk==3.4.0
-nltk==3.8.1
 rank-bm25==0.2.2
 boto3 == 1.26.58
 fastapi==0.89.1

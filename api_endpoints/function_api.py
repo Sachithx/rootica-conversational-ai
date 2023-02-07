@@ -1,3 +1,4 @@
+import uvicorn
 from typing import Optional
 from fastapi import FastAPI
 from models import Product
@@ -88,3 +89,7 @@ def update_product_partial(product: Product):
     
     except Exception as exception:
         return {'state': False, 'message': f"Couldn't update the product. {exception}"}
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=7005, proxy_headers=True)

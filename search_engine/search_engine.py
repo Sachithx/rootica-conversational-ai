@@ -5,7 +5,7 @@ import nltk.corpus.reader.wordnet as wn
 from nltk.stem import WordNetLemmatizer
 from rank_bm25 import BM25Okapi
 import numpy as np
-from boto3_dynamodb import DynamoDBCRUD
+from api_endpoints.boto3_dynamodb import DynamoDBCRUD
 
 class PreProcessSE():
     def __init__(self) -> None:
