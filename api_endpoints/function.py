@@ -1,6 +1,5 @@
 from boto3_dynamodb import DynamoDBCRUD
 boto3_dynamodb = DynamoDBCRUD()
-# database = boto3_dynamodb.get_all()
 
 
 class CRUD:

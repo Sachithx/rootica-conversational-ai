@@ -7,7 +7,6 @@ from boto3_dynamodb import DynamoDBCRUD
 
 app = FastAPI()
 boto3_dynamodb = DynamoDBCRUD()
-# product_db = boto3_dynamodb.get_all()
 crud = CRUD()
 
 

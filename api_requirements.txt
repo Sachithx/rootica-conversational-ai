@@ -1,7 +1,6 @@
-rasa==3.4.1
-rasa-sdk==3.4.0
 rank-bm25==0.2.2
 boto3 == 1.26.58
 fastapi==0.89.1
 pydantic==1.10.2
 uvicorn==0.20.0
+numpy==1.23.5
