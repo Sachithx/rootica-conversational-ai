@@ -6,6 +6,7 @@ WORKDIR /rootica
 
 COPY api_requirements.txt /rootica/api_requirements.txt
 
+RUN pip3 install --upgrade pip
 RUN pip3 --no-cache-dir --use-deprecated=legacy-resolver install -r /rootica/api_requirements.txt
 
 COPY . ./

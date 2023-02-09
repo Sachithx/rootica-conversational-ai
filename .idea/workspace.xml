@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d5a71a6-ac4a-4045-9b99-c41c5f214cbf" name="Changes" comment="Created dockerfile and docker-compose files">
-      <change afterPath="$PROJECT_DIR$/rasa_requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rootica-conversational-ai.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rootica-conversational-ai.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CRUDDockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/CRUDDockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RasaDockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/RasaDockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/function.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_endpoints/function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_endpoints/function_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_endpoints/function_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/api_requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_engine/search_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/search_engine/search_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rasa_requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rasa_requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,25 +56,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/Sachith/rootica-conversational-ai&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/Sachith/rootica-conversational-ai",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/actions" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/api_endpoints" />
       <recent name="$PROJECT_DIR$/boto_3" />
       <recent name="$PROJECT_DIR$" />
@@ -229,7 +228,8 @@
       <workItem from="1675655295232" duration="8068000" />
       <workItem from="1675737690841" duration="24611000" />
       <workItem from="1675773611266" duration="27915000" />
-      <workItem from="1675848360050" duration="10992000" />
+      <workItem from="1675848360050" duration="28776000" />
+      <workItem from="1675941642010" duration="359000" />
     </task>
     <task id="LOCAL-00001" summary="added create schema script">
       <created>1675590659662</created>
