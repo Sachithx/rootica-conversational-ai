@@ -511,29 +511,29 @@ nlu:
     - what are the key ingredients of [Beach Aroma Duo Packs](product)? can you tell me
     - what this [Peace Islander Set](product) contain?
 
-- intent: benifits
+- intent: benefits
   examples: |
-    - what are the benifits?
-    - tell me the benifits of using this
-    - how can i get benifits from this
-    - how about the benifits
-    - benifits?
+    - what are the benefits?
+    - tell me the benefits of using this
+    - how can i get benefits from this
+    - how about the benefits
+    - benefits?
     - how about the results I can get by using this?
-    - can you tell me the benifits of using [sleep intense wellness trio](product)
-    - tell me about the benifits i can get form using  [ashwagandha(product)]  as a food supplement
-    - dose it have any added benifits from using  [sleep home spa set](product)
-    - what are the benifits of using [caramom rose islander set](product)
-    - what kind of skin type can have more benifits by using [cardomom rose body & pillow mist](product)
-    - what kind of benifits i would have after using  [beach aroma](product)
-    - tell me the benifits of using [ultimate glow routine](product) for my face
-    - what are the benifits of using [virgin coconut home spa](product) based products
-    - tell me more about the benifits of using  [sandalwood body pillow mist](product)
-    - what is the skin type which can benifits from using [ylang lavendar body lotion](product)
-    - what kind of benifits my  hair  can have by using  [energise home spa set](product)
-    - what are the benifits of using [peace islander](product)
-    - benifits of [neroli jasmine calming body mist](product)
-    - can you explain some benifits of using [sleep wellness trio](product)
-    - tell aboutt benifits of using [island rose perfume rollon](product)
+    - can you tell me the benefits of using [sleep intense wellness trio](product)
+    - tell me about the benefits i can get form using  [ashwagandha(product)]  as a food supplement
+    - dose it have any added benefits from using  [sleep home spa set](product)
+    - what are the benefits of using [caramom rose islander set](product)
+    - what kind of skin type can have more benefits by using [cardomom rose body & pillow mist](product)
+    - what kind of benefits i would have after using  [beach aroma](product)
+    - tell me the benefits of using [ultimate glow routine](product) for my face
+    - what are the benefits of using [virgin coconut home spa](product) based products
+    - tell me more about the benefits of using  [sandalwood body pillow mist](product)
+    - what is the skin type which can benefits from using [ylang lavendar body lotion](product)
+    - what kind of benefits my  hair  can have by using  [energise home spa set](product)
+    - what are the benefits of using [peace islander](product)
+    - benefits of [neroli jasmine calming body mist](product)
+    - can you explain some benefits of using [sleep wellness trio](product)
+    - tell aboutt benefits of using [island rose perfume rollon](product)
 
 - synonym: skin types
   examples: |

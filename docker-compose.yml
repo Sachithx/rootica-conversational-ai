@@ -1,18 +1,47 @@
-version: '3'
+version: '3.8'
 
 services:
-  rasa_enable_api:
-    image: rootica_rasa_enable_api
+
+  crud_api:
+    image: rootica_crud_api
+    build:
+      context: ./
+      dockerfile: CRUDDockerfile
+    env_file:
+      - aws_keys.env
+    container_name: crud_api
+    ports:
+      - "7005:7005"
+    command: python3 api_endpoints/function_api.py
+
+  rasa_action_server:
+    image: rootica_rasa_action_server
     build:
       context: ./
       dockerfile: RasaDockerfile
     env_file:
       - aws_keys.env
-    container_name: rasa_enable_api
+    container_name: rasa_action_server
+    volumes:
+      - ./:/rootica
+    restart: always
     ports:
-      - "5005:5005"
+      - "5055:5055"
+    network_mode: default
     command: rasa run --enable-api
 
+#  rasa_enable_api:
+#    image: rootica_rasa_enable_api
+#    build:
+#      context: ./
+#      dockerfile: RasaDockerfile
+#    env_file:
+#      - aws_keys.env
+#    container_name: rasa_enable_api
+#    ports:
+#      - "5005:5005"
+#    command: rasa run --enable-api
+#
 #  rasa_action_server:
 #    image: rootica_rasa_action_server
 #    build:
@@ -25,16 +54,3 @@ services:
 #      - "5055:5055"
 #    command:
 #      - rasa run actions
-#
-#  crud_api:
-#    image: rootica_crud_api
-#    build:
-#      context: ./
-#      dockerfile: CRUDDockerfile
-#    env_file:
-#      - aws_keys.env
-#    container_name: crud_api
-#    ports:
-#      - "7005:7005"
-#    command:
-#      - python3 api_endpoints/function_api.py

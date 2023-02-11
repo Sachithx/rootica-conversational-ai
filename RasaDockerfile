@@ -1,13 +1,12 @@
-FROM python:3.7
+FROM python:3.8
 
 ENV PYTHONPATH=/rootica
 
 WORKDIR /rootica
 
-COPY rasa_requirements.txt /rootica/rasa_requirements.txt
+COPY requirements.txt /rootica/requirements.txt
 
-RUN pip3 install --upgrade pip
-RUN pip3 --no-cache-dir --use-deprecated=legacy-resolver install -r /rootica/rasa_requirements.txt
+RUN pip3 --no-cache-dir --use-deprecated=legacy-resolver install -r /rootica/requirements.txt
 
 COPY . ./
 
