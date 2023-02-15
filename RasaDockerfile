@@ -10,7 +10,7 @@ RUN python -m pip install --upgrade pip
 
 RUN pip3 --no-cache-dir --use-deprecated=legacy-resolver install -r /rootica/rasa_requirements.txt
 
-#RUN python -m nltk.downloader popular
+RUN python -m nltk.downloader popular
 
 COPY . ./
 
