@@ -22,35 +22,18 @@ services:
     env_file:
       - aws_keys.env
     container_name: rasa_action_server
-    volumes:
-      - ./:/rootica
-    restart: always
     ports:
       - "5055:5055"
-    network_mode: default
-    command: rasa run --enable-api
+    command: rasa run actions
 
-#  rasa_enable_api:
-#    image: rootica_rasa_enable_api
-#    build:
-#      context: ./
-#      dockerfile: RasaDockerfile
-#    env_file:
-#      - aws_keys.env
-#    container_name: rasa_enable_api
-#    ports:
-#      - "5005:5005"
-#    command: rasa run --enable-api
-#
-#  rasa_action_server:
-#    image: rootica_rasa_action_server
-#    build:
-#      context: ./
-#      dockerfile: RasaDockerfile
-#    env_file:
-#      - aws_keys.env
-#    container_name: rasa_action_server
-#    ports:
-#      - "5055:5055"
-#    command:
-#      - rasa run actions
+  rasa_enable_api:
+    image: rootica_rasa_enable_api
+    build:
+      context: ./
+      dockerfile: RasaDockerfile
+    env_file:
+      - aws_keys.env
+    container_name: rasa_enable_api
+    ports:
+      - "5005:5005"
+    command: rasa run --enable-api  

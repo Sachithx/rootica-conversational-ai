@@ -1,12 +1,16 @@
-FROM python:3.8
+FROM --platform=linux/amd64 python:3.8
 
 ENV PYTHONPATH=/rootica
 
 WORKDIR /rootica
 
-COPY requirements.txt /rootica/requirements.txt
+COPY rasa_requirements.txt /rootica/rasa_requirements.txt
 
-RUN pip3 --no-cache-dir --use-deprecated=legacy-resolver install -r /rootica/requirements.txt
+RUN python -m pip install --upgrade pip
+
+RUN pip3 --no-cache-dir --use-deprecated=legacy-resolver install -r /rootica/rasa_requirements.txt
+
+#RUN python -m nltk.downloader popular
 
 COPY . ./
 
