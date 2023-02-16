@@ -1,5 +1,5 @@
-rasa==3.1.0
-rasa-sdk==3.1.1
+rasa==3.4.1
+rasa-sdk==3.4.0
 rank-bm25==0.2.2
 boto3==1.26.58
 pydantic==1.10.2
