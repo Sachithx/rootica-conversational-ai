@@ -14,17 +14,17 @@ services:
 #      - "7005:7005"
 #    command: python3 api_endpoints/function_api.py
 
-#  rasa_action_server:
-#    image: rootica_rasa_action_server
-#    build:
-#      context: ./
-#      dockerfile: RasaDockerfile
-#    env_file:
-#      - aws_keys.env
-#    container_name: rasa_action_server
-#    ports:
-#      - "5055:5055"
-#    command: rasa run actions
+  rasa_action_server:
+    image: rootica_rasa_action_server
+    build:
+      context: ./
+      dockerfile: RasaDockerfile
+    env_file:
+      - aws_keys.env
+    container_name: rasa_action_server
+    ports:
+      - "5055:5055"
+    command: rasa run actions
 
   rasa_enable_api:
     image: rootica_rasa_enable_api
