@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2d5a71a6-ac4a-4045-9b99-c41c5f214cbf" name="Changes" comment="Created dockerfile and docker-compose files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +240,7 @@
       <workItem from="1676313335956" duration="4280000" />
       <workItem from="1676365185872" duration="11000" />
       <workItem from="1676445516297" duration="5436000" />
-      <workItem from="1676516432160" duration="810000" />
+      <workItem from="1676516432160" duration="1530000" />
     </task>
     <task id="LOCAL-00001" summary="added create schema script">
       <created>1675590659662</created>
